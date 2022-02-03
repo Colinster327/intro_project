@@ -1,7 +1,9 @@
 from django.contrib import admin
 from django.urls import path, include
+from .router import router
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('brands/', include('vehicles.urls'))
+    #path('vehicles/', include('vehicles.urls')),
+    path('vehicles/', include(router.urls))
 ]
