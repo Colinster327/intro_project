@@ -1,0 +1,10 @@
+<ul>
+    {% for brand in brands_list %}
+    <li><h3>{{ brand.name }}</h3></li>
+    <ul>
+        {% for vehicle in brand.vehicles_set.all %}
+        <li>{{ vehicle.name }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</ul>
