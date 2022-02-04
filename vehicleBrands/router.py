@@ -1,4 +1,4 @@
-from vehicles.views import BrandsView
+from vehicles.views.brands import BrandsView
 from rest_framework import routers
 
 router = routers.DefaultRouter()

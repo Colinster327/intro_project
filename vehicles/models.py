@@ -5,6 +5,10 @@ from django.db import models
 class Brands(models.Model):
     name = models.CharField(max_length = 50)
 
+    @property
+    def vehicles(self):
+        return self.vehicles_set.all()
+
     def __str__(self):
         return self.name
 

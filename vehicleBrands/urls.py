@@ -4,6 +4,5 @@ from .router import router
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('vehicles/', include('vehicles.urls')),
     path('vehicles/', include(router.urls))
 ]
