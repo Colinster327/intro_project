@@ -5,11 +5,11 @@ class VehiclesSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Vehicles
-        fields = ['name']
+        fields = ['name', 'id']
 
 class BrandsSerializer(serializers.ModelSerializer):
     vehicles = VehiclesSerializer(many=True)
 
     class Meta:
         model = Brands
-        fields = ['name', 'vehicles']
+        fields = ['name', 'vehicles', 'id']
