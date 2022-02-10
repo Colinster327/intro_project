@@ -1,7 +1,6 @@
 from vehicles.models import Brands
 from vehicles.serializers import BrandsSerializer
 from rest_framework import viewsets
-from rest_framework.response import Response
 
 # Create your views here.
 
