@@ -70,7 +70,7 @@ CORS_ALLOW_HEADERS = [
     "x-requested-with",
 ]
 
-ROOT_URLCONF = 'vehicleBrands.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -88,7 +88,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'vehicleBrands.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
